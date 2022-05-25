@@ -1,0 +1,40 @@
+
+.container{
+    max-width:114rem;
+    margin:0 auto;
+    .row{
+        &,
+        &::after, 
+        &::before{
+            width:100%;
+            display:table;
+            clear:both;
+        }
+
+        div[class^='col']
+        {
+            float:left;
+            padding:0 1rem;
+        }
+    }
+}
+        .col12{
+            width:100%;
+           
+        }
+        .col9{
+            width:75%;
+        }
+        .col6{
+            width:50%;
+        }
+        .col4{
+            width:33.33%;
+        }
+        .col3{
+            width:25%;
+            padding:2rem;
+        }
+        .col2{
+        width:calc(100% / 6);
+    }
